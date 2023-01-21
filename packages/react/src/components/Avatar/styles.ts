@@ -4,7 +4,7 @@ import { styled } from '../../styles'
 export const AvatarContainer = styled(Avatar.Root, {
   borderRadius: '$full',
   display: 'inline-block',
-  width: '48px',
+  width: '$12',
   height: '$12',
   overflow: 'hidden',
 })
