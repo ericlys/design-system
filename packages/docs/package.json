@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "start-storybook -p 6006",
-    "deploy-storybook":  "storybook-to-ghpages -o storybook-static",
-    "build": "build-storybook --output-dir dist"
+    "deploy-storybook": "storybook-to-ghpages",
+    "build": "build-storybook"
   },
   "keywords": [],
   "author": "",
