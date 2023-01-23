@@ -1,6 +1,6 @@
 import * as RadixToast from '@radix-ui/react-toast'
 import { X } from 'phosphor-react'
-import { ComponentProps, ReactNode } from 'react'
+import { ComponentProps } from 'react'
 import { Close, Description, Title, ToastContainer, Viewport } from './styles'
 
 export interface ToastProps extends ComponentProps<typeof ToastContainer> {
@@ -8,12 +8,11 @@ export interface ToastProps extends ComponentProps<typeof ToastContainer> {
   description: string
 }
 
-interface ToastProviderProps {
-  children: ReactNode
-}
+interface ToastProiverProps
+  extends ComponentProps<typeof RadixToast.Provider> {}
 
-export function ToastProiver({ children }: ToastProviderProps) {
-  return <RadixToast.Provider>{children}</RadixToast.Provider>
+export function ToastProiver({ children, ...rest }: ToastProiverProps) {
+  return <RadixToast.Provider {...rest}>{children}</RadixToast.Provider>
 }
 
 export function Toast({ title, description, ...rest }: ToastProps) {
