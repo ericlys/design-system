@@ -1,7 +1,3 @@
-<span align="center">
-  <img src=".github/imgs.png" alt="" />
-</span>
-
 ## 💻 Project
 
 This project is a design system created with the aim of documenting the standards that must be followed across application layouts to keep them consistent.
