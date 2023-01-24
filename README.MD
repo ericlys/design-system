@@ -6,6 +6,12 @@
 
 This project is a design system created with the aim of documenting the standards that must be followed across application layouts to keep them consistent.
 
+```bash
+$ npm i @eric-ignite-ui/react
+$ npm i @eric-ignite-ui/tokens
+$ npm i @eric-ignite-ui/docs
+```
+
 </br>
 
 ## 🔖 Doc
