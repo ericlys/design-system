@@ -7,7 +7,19 @@ export const TextInputContainer = styled('div', {
   boxSizing: 'border-box',
   border: '2px solid $gray900',
   display: 'flex',
-  alignItems: 'baseline', // align based on text
+  // alignItems: 'baseline', // align based on text
+  alignItems: 'center',
+
+  variants: {
+    size: {
+      sm: {
+        padding: '$2 $3',
+      },
+      md: {
+        padding: '$3 $4',
+      },
+    },
+  },
 
   // focus-withing
   '&:has(input:focus)': {
@@ -18,12 +30,16 @@ export const TextInputContainer = styled('div', {
     opacity: 0.5,
     cursor: 'not-allowed',
   },
+
+  defaultVariants: {
+    size: 'md',
+  },
 })
 
 export const Prefix = styled('span', {
   fontFamily: '$default',
   fontSize: '$sm',
-  color: '$gray400',
+  color: '$gray500',
   fontWeight: '$regular',
 })
 
